@@ -1,5 +1,5 @@
 let node_env = process.env.NODE_ENV;
-if (node_env == "prod"){
+if (node_env == "production"){
   config = require('./config/config.prod');
 } else if (node_env == "staging"){
   config = require('./config/config.staging');
