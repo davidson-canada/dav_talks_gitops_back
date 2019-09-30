@@ -1,10 +1,10 @@
 let node_env = process.env.NODE_ENV;
-if (node_env == "production"){
+if (node_env == "prod"){
   config = require('./config/config.prod');
 } else if (node_env == "staging"){
   config = require('./config/config.staging');
 } else {
-  node_env = "development"
+  node_env = "dev"
   config = require('./config/config.dev');
 }
 config.NODE_ENV = node_env;
